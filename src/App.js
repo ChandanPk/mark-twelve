@@ -1,25 +1,59 @@
-import logo from './logo.svg';
-import './App.css';
+import AnglesOfTri from "./comps/AnglesOfTri";
+import CalculateArea from "./comps/CalculateArea";
+import Hypotenuse from "./comps/Hypotenuse";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Header from "./comps/Header";
+import Home from "./comps/Home";
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Header />
+
+        <div className="contents">
+          <Switch>
+
+            <Route exact path="/">
+              <Home />
+            </Route>
+
+            <Route path="/angleoftri">
+              <AnglesOfTri />
+            </Route>
+
+            <Route path="/calculatearea">
+              <CalculateArea />
+            </Route>
+
+            <Route path="/hypotenuse">
+              <Hypotenuse />
+            </Route>
+
+          </Switch>
+        </div>
+
+        {/* <AnglesOfTri />
+        <Hypotenuse />
+        <CalculateArea /> */}
+      </div>
+    </Router>
   );
 }
 
 export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
