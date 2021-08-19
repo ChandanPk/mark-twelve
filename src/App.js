@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Header from "./comps/Header";
 import Home from "./comps/Home";
 import Quizz from "./comps/Quizz";
+import Footer from "./comps/Footer";
 
 function App() {
 
@@ -38,6 +39,7 @@ function App() {
 
           </Switch>
         </div>
+        <Footer />
 
         {/* <AnglesOfTri />
         <Hypotenuse />

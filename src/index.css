@@ -93,10 +93,12 @@ button:hover {
   width: 20px;
 }
 
-.err {
-  border: 1px solid red;
+#icons-grid {
+  margin-top: 6em;
 }
 
-.success {
-  border: 1px solid rgb(18, 228, 18);
+#icons-grid a {
+  color: #222;
+  margin: 0 .2em;
 }
+
