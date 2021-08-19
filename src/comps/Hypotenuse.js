@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Hypotenuse = () => {
     
-    var hypotenuse;
-    
+    const [hypotenuse, setHypotenuse] = useState();
     const [num1, setNum1] = useState();
     const [num2, setNum2] = useState();
     const [result, setResult] = useState(null);
@@ -19,8 +18,8 @@ const Hypotenuse = () => {
 
     const handleSubmit = (e)=> {
         e.preventDefault();
-        hypotenuse = Math.sqrt((Math.pow(num1, 2) + Math.pow(num2, 2)));    
-       console.log(hypotenuse);
+        setHypotenuse(Math.sqrt((Math.pow(num1, 2) + Math.pow(num2, 2))));    
+    //    console.log(hypotenuse);
        setResult(true);
 
     }

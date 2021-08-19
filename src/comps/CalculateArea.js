@@ -86,7 +86,7 @@ const CalculateArea = () => {
         !disp1 && setDisp1(true);
         disp2 && setDisp2(null);
         disp3 && setDisp3(null);
-        setResult1("formula1");
+        setResult1("1/2*base*height");
         result2 && setResult2(null);
         result3 && setResult3(null);
     }
@@ -95,7 +95,7 @@ const CalculateArea = () => {
         disp1 && setDisp1(null);
         !disp2 && setDisp2(true);
         disp3 && setDisp3(null);
-        setResult2("formula2");
+        setResult2("√s(s-a)(s-b)(s-c)");
         result1 && setResult1(null);
         result3 && setResult3(null);
 
@@ -105,7 +105,7 @@ const CalculateArea = () => {
         disp1 && setDisp1(null);
         disp2 && setDisp2(null);
         !disp3 && setDisp3(true);
-        setResult3("formula3");
+        setResult3("1/2*b*c*sin(A)");
         result2 && setResult2(null);
         result1 && setResult1(null);
     }

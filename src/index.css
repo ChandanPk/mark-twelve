@@ -10,7 +10,7 @@ body {
 }
 
 .header h1 {
-  margin: 1em auto 3em auto;
+  margin: 1em auto 2em auto;
 }
 
 .catogories {
@@ -70,4 +70,33 @@ button:hover {
 
 .box p {
   margin-top: 4rem;
+}
+
+.question-block {
+  width: 500px;
+  margin: auto;
+  text-align: left;
+}
+
+.question-block p {
+  font-size: 1.5rem;
+
+}
+
+.question-block label {
+  margin-right: 40px;
+}
+
+.question-block input {
+  margin: 0;
+  margin-bottom: 2rem;
+  width: 20px;
+}
+
+.err {
+  border: 1px solid red;
+}
+
+.success {
+  border: 1px solid rgb(18, 228, 18);
 }

@@ -4,6 +4,7 @@ import Hypotenuse from "./comps/Hypotenuse";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Header from "./comps/Header";
 import Home from "./comps/Home";
+import Quizz from "./comps/Quizz";
 
 function App() {
 
@@ -29,6 +30,10 @@ function App() {
 
             <Route path="/hypotenuse">
               <Hypotenuse />
+            </Route>
+
+            <Route path="/quizz">
+              <Quizz />
             </Route>
 
           </Switch>
